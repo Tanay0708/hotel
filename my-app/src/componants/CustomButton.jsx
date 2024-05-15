@@ -49,7 +49,7 @@ const CustomButton = () => {
 
   return (
     <>
-      <Button onClick={handleOpen} className='bg-[#9B804E]'>
+      <Button onClick={handleOpen} className='bg-[#9B804E] w-full h-full'>
         Book Now
       </Button>
       <Dialog
