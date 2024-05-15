@@ -5,6 +5,7 @@ import {
   Typography,
   IconButton,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
  
 
 
@@ -39,18 +40,27 @@ const NavDrawer = () => {
               </svg>
             </IconButton>
           </div>
+          <Link to={'/'}>
           <Typography color="gray" className="mb-8 pr-4 font-normal">
             Home
           </Typography>
-          <Typography color="#" className="mb-8 pr-4 font-normal">
-            Contacts
+          </Link>
+          <Link to={'/rooms/deluxe'}>
+          <Typography color="gray" className="mb-8 pr-4 font-normal">
+           Deluxe
           </Typography>
-          <div className="flex gap-2">
-            <Button size="sm" variant="outlined">
-              Documentation
-            </Button>
-            <Button size="sm">Get Started</Button>
-          </div>
+          </Link>
+          <Link to={'/rooms/grand-royal'}>
+          <Typography color="gray" className="mb-8 pr-4 font-normal">
+            Grand Royal
+          </Typography>
+          </Link>
+          <Link to={'/rooms/grand-heritage'}>
+          <Typography color="gray" className="mb-8 pr-4 font-normal">
+            Grand Heritage
+          </Typography>
+          </Link>
+         
         </Drawer>
       </React.Fragment>
   );

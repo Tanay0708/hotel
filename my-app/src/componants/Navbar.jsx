@@ -2,6 +2,8 @@ import React from 'react'
 import navList from '../contants'
 import '../App.css';
 import NavDrawer from './NavDrawer';
+import CustomButton from './CustomButton';
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -11,20 +13,25 @@ const Navbar = () => {
         </div>
         <div>
         <ul className='hidden lg:flex justify-between gap-4 forum font-bold tracking-wider md:hidden ' >
-            {
-                navList.map((el) => {
-                    return <li key={el}>
-                        {el}
-                    </li>
-                })
-            }
+           <Link to={"/"}>
+           <li>Home</li>
+           </Link>
+           <Link to={'/rooms/deluxe'}>
+           <li>Deluxe</li>
+           </Link>
+           <Link to={'/rooms/grand-royal'}>
+           <li>Grand Royal</li>
+           </Link>
+           <Link to={'/rooms/grand-heritage'}>
+           <li>Grand Heritage</li>
+           </Link>
         </ul>
         </div>
             <div className='lg:hidden block z-100'>
                 <NavDrawer/>
             </div>
             <div className='w-36 hidden md:hidden lg:block'>
-            <button className='w-full h-12 bg-[#9B804E] hover:bg-[#3D3931] text-white '>Email</button>
+           <CustomButton />
             </div>
     </div>
   )
