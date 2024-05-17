@@ -6,6 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { hotelLogo } from "../Images";
  
 
 
@@ -17,11 +18,14 @@ const NavDrawer = () => {
    
     return (
       <React.Fragment>
-        <Button onClick={openDrawer}>Menu</Button>
+        <p onClick={openDrawer}>
+          <i class=
+"fi fi-rr-menu-burger"
+></i></p>
         <Drawer open={open} onClose={closeDrawer} className="p-4">
           <div className="mb-6 flex items-center justify-between">
             <Typography variant="h5" color="blue-gray" className="forum">
-             Herittage Hotels
+             <img src={hotelLogo} className="w-24" alt="" />
             </Typography>
             <IconButton variant="text" color="blue-gray" onClick={closeDrawer}>
               <svg

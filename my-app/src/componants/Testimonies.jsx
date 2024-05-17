@@ -5,7 +5,7 @@ const Testimonies = () => {
   return (
     <Carousel >
      
-  <section className="relative isolate overflow-hidden bg-[#FBF6E8] px-6 py-24 sm:py-32 lg:px-8">
+  <section className="relative isolate overflow-hidden bg-[#FCF9EF] px-6 py-24 sm:py-32 lg:px-8">
     <div className="absolute inset-0 -z-10  opacity-20" />
     <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%]  sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
     <div className=" max-w-2xl lg:max-w-4xl m-auto text-center">

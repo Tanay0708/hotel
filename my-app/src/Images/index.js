@@ -14,9 +14,10 @@ import pic14 from './pic14.jpeg';
 import pic15 from './pic15.jpeg';
 import pic16 from './pic16.jpeg';
 import pic17 from './pic17.jpeg';
-
+import hotelLogo from './hotelLogo.jpeg'
 
 export { 
+    hotelLogo,
     pic1,
     pic2,
     pic3,

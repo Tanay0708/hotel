@@ -7,6 +7,8 @@ import Amenities from '../componants/Amenities'
 import Testimonies from '../componants/Testimonies'
 import Blogs from '../componants/Blogs'
 import Footer from '../componants/Footer'
+import PriceTable from '../componants/PriceTable';
+import Map from '../componants/Map';
 
 const Home = () => {
   return (
@@ -14,9 +16,11 @@ const Home = () => {
     <Navbar />
     <Hero />
     <Hotels />
+    <PriceTable />
     <Amenities />
     <Testimonies />
     <Blogs />
+    <Map />
     <Footer />
     </div>
   )

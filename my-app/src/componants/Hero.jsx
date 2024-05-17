@@ -7,7 +7,7 @@ import CustomButton from './CustomButton';
 const Hero = () => {
   return (
     <section className='flex bg-[#FEFBF1] relative ' >
-      <div className='w-full h-full -z-999 absolute -top-6 lg:hidden'>
+      <div className='w-full h-full -z-999 absolute -top-0 lg:hidden'>
           <img src={pic1} className='w-full h-full object-cover opacity-10' alt="" />
       </div>
         <div className=' md:w-[50%] sm:w-[80%] lg:w-2/6 m-auto p-2   text-center  lg:p-1 lg:pl-10 lg:text-left lg:z-999  '>

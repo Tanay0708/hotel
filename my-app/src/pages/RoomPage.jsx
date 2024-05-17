@@ -1,20 +1,23 @@
 import React from 'react'
 import {pic6} from '../Images'
 import Navbar from '../componants/Navbar'
+import Footer from '../componants/Footer'
+import PriceTable from '../componants/PriceTable'
 
 const RoomPage = () => {
   return (
-    <section className='bg-[#FFFCF2] text-[#3D3931] mb-20'>
+    <>
+    <section className='bg-[#FFFCF2] text-[#3D3931]  pb-10'>
       <Navbar />
       <div className='w-[80%] m-auto h-96'>
         <img src={pic6} alt="" className='w-full h-full object-contain'/>
       </div>
       <div className=' w-[80%] m-auto mt-5 leading-10'>
         <h1 className='text-4xl text-center'>
-          Deluxe Room ( ₹700/night )
+          Deluxe Room ( ₹1600/night )
         </h1>
         <p className='mt-5 text-lg '>
-        Welcome to your home away from home at [Hotel Name], where luxury meets convenience. Our meticulously designed rooms offer the perfect blend of comfort and functionality, ensuring a delightful stay for every guest.
+        Welcome to your home away from home at Hotel Indragrah Heritage, where luxury meets convenience. Our meticulously designed rooms offer the perfect blend of comfort and functionality, ensuring a delightful stay for every guest.
         </p>
         <div className='text-lg mt-10'>
         <span className='text-3xl'> Rooms Features:</span> 
@@ -59,6 +62,9 @@ const RoomPage = () => {
         </div>
       </div>
     </section>
+    <PriceTable />
+    <Footer />
+    </>
   )
 }
 

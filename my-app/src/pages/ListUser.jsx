@@ -35,23 +35,25 @@ const ListUser = () => {
   return (
     <>
     <Dashboard />
-    <div>
-        <table className='text-center w-[80%] m-auto overflow-hidden' >
+    <div className='overflow-scroll w-full'>
+        <table className='text-center w-[200%] md:w-[80%] lg:w-[80%] m-auto ' >
+            <thead className='w-full' >
             <tr className='border-2'>
                 <th className='border border-black'>Name</th>
-                <th className='border border-black'>Date From</th>
+                <th className='border border-black '>Date From</th>
                 <th className='border border-black'>Date To</th>
                 <th className='border border-black'>Mobile No.</th>
                 <th className='border border-black'>Room</th>
                 <th className='border border-black'>Delete</th>
             </tr>
+            </thead>
+            <tbody>
         {
             user.map((el) => {
                 return (
                 <tr className='border-2'>
-             <td>{el.name}</td>
-             {/* <td>{moment(el.dateFrom.toDate()).format("Do MMM YY")}</td>
-             <td>{moment(el.dateTo.toDate()).format("Do MMM YY")}</td> */}
+             <td className=''>{el.name}</td>
+        
              <td className='border'>{el.dateFrom}</td>
              <td className='border'>{el.dateTo}</td>
              <td className='border'>{el.mobile}</td>
@@ -65,6 +67,7 @@ const ListUser = () => {
             )
             })
         }
+        </tbody>
         </table>
     </div>
     

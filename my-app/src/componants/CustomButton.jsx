@@ -43,7 +43,8 @@ const CustomButton = () => {
         window.location.reload()
       }
       catch(err) {
-        console.log(err);
+     
+        alert("Enter All Details")
       }
   }
 
@@ -60,18 +61,18 @@ const CustomButton = () => {
           unmount: { scale: 0.9, y: -100 },
         }}
       >
-        <DialogHeader>Its a simple dialog.</DialogHeader>
-        <DialogBody className='text-center '>
-            <label >Name</label><br />
-          <input type="text" required className='border-2 w-[80%] md:w-[50%] lg:w-[50%]' placeholder='Enter your Name' onChange={(e) => setName(e.target.value)} /><br />
-          <label >Check-in</label><br />
-          <input type="date" required className='border-2 w-[80%] md:w-[50%] lg:w-[50%]' onChange={(e) =>  setDate1(e.target.value)} /><br />
+        <DialogHeader></DialogHeader>
+        <DialogBody className='text-left md:text-center  text-black  w-[80%] m-auto lora '>
+            <label  >Name</label><br />
+          <input type="text" required className='border-2 w-[100%] h-12 md:w-[80%] lg:w-[80%]' placeholder='Enter your Name' onChange={(e) => setName(e.target.value)} /><br />
+          <label  >Check-in</label><br />
+          <input type="date" required className='border-2 w-[100%] h-12  md:w-[80%] lg:w-[80%]' onChange={(e) =>  setDate1(e.target.value)} /><br />
           <label >Check-out</label><br />
-          <input type="date" required className='border-2 w-[80%] md:w-[50%] lg:w-[50%]' onChange={(e) => setDate2(e.target.value)} /><br />
+          <input type="date" required className='border-2 w-[100%] h-12  md:w-[80%] lg:w-[80%]' onChange={(e) => setDate2(e.target.value)} /><br />
           <label >Mobile-no.</label><br />
-          <input type="number" className='border-2 w-[80%] md:w-[50%] lg:w-[50%]' placeholder='Enter your mobile no.'onChange={(e) => setMobile(e.target.value)}   /><br />
+          <input type="number" className='border-2 w-[100%] h-12  md:w-[80%] lg:w-[80%]' placeholder='Enter your mobile no.'onChange={(e) => setMobile(e.target.value)}   /><br />
           <label >Room Type</label><br />
-          <select className='border-2 w-[80%] md:w-[50%] lg:w-[50%]' onChange={(e) => setRoom(e.target.value)} >
+          <select className='border-2 w-[100%] md:w-[80%] h-12  lg:w-[80%]' onChange={(e) => setRoom(e.target.value)} >
             <option value="deluxe">Deluxe Room</option>
             <option value="grand-heritage">Grand Heritage</option>
             <option value="grand-royal">Grand Royal</option>

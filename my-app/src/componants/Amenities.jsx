@@ -4,7 +4,7 @@ import React from 'react'
 const Amenities = () => {
   return (
     <>
-    <section className='bg-[#FCF9EF] w-full h-auto p-10 pb-20'>
+    <section className='bg-[#FBF6E8] w-full h-auto p-10 md:p-20 pb-20'>
          <div className='w-full md:w-[60%] lg:w-[55%]  h-auto   m-auto text-center mt-20 '>
             <h1 className='lora text-base tracking-widest text-[#9B804E] '>COME AND ENJOY</h1>
             <h1 className='text-6xl forum mt-2 '>Amenities At Hotel</h1>

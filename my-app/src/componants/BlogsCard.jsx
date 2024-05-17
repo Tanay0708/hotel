@@ -1,9 +1,9 @@
 import React from 'react'
 
-const BlogsCard = () => {
+const BlogsCard = ({pic}) => {
   return (
    <section className='w-full h-auto flex flex-col gap-5'>
-    <img src="https://herittage.wpengine.com/wp-content/uploads/2023/06/blog-1-1.webp" className='w-full h-full' alt="" />
+    <img src={pic} className='w-full h-full' alt="" />
 
     <p className='lora tracking-widest text-lg'>date / comments</p>
 
