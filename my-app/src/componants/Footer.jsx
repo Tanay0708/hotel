@@ -15,7 +15,7 @@ const Footer = () => {
             <p className='lora mt-5 text-[#b5b5b5]'>Located in the heart of the city, we offer elegantly designed rooms and top-notch amenities to make your stay unforgettable.  </p>
             <div className='flex flex-col md:flex-row   gap-5 mt-10 text-white'>
                 <button className='md:w-1/2 h-12 bg-[#9B804E] hover:bg-[#3D3931] '>+91 7581000017</button>
-                <button className='md:w-1/2  h-12 bg-[#3D3931] hover:bg-[#9B804E]'>hotelindragarh@gmail.com</button>
+                <button className='md:w-1/2  h-12 bg-[#3D3931] hover:bg-[#9B804E]'>hotelindergarh@gmail.com</button>
             </div>
         </div>
         <div className='flex flex-col md:flex-row  text-center  text-[#b5b5b5] p-10 gap-5'>

@@ -3,11 +3,12 @@ import { pic13} from '../Images'
 import Navbar from '../componants/Navbar'
 import PriceTable from '../componants/PriceTable'
 import Footer from '../componants/Footer'
+import CustomButton from '../componants/CustomButton'
 
 const RoyalRoom = () => {
     return (
       <>
-        <section className='bg-[#FFFCF2] text-[#3D3931]'>
+        <section className='bg-[#FFFCF2] text-[#3D3931] pb-10'>
           <Navbar />
           <div className='w-[80%] m-auto h-96'>
             <img src={pic13} alt="" className='w-full h-full object-contain'/>
@@ -17,7 +18,7 @@ const RoyalRoom = () => {
               Deluxe Room ( ₹1800/night )
             </h1>
             <p className='mt-5 text-lg '>
-            Welcome to your home away from home at Hotel Indragrah Heritage, where luxury meets convenience. Our meticulously designed rooms offer the perfect blend of comfort and functionality, ensuring a delightful stay for every guest.
+            Welcome to your home away from home at Hotel Indergarh Heritage, where luxury meets convenience. Our meticulously designed rooms offer the perfect blend of comfort and functionality, ensuring a delightful stay for every guest.
             </p>
             <div className='text-lg mt-10'>
             <span className='text-3xl'> Rooms Features:</span> 
@@ -54,10 +55,10 @@ const RoyalRoom = () => {
             <div className='text-lg mt-10'>
             <span className='text-3xl'>Book Your Stay:</span> 
               <p className='mt-5'>
-              Experience the epitome of luxury and convenience at Hotel Indragrah Heritage. Book your stay with us today and immerse yourself in a world of unparalleled comfort and hospitality. We eagerly await the opportunity to exceed your expectations and create lasting memories during your visit.
+              Experience the epitome of luxury and convenience at Hotel Indergarh Heritage. Book your stay with us today and immerse yourself in a world of unparalleled comfort and hospitality. We eagerly await the opportunity to exceed your expectations and create lasting memories during your visit.
               </p>
               <button className='text-xl w-36 h-10 mt-5 bg-[#9B804E] text-white'>
-                Book Now
+                <CustomButton />
               </button>
             </div>
           </div>

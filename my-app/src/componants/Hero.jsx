@@ -16,7 +16,7 @@ const Hero = () => {
           
         <div className='   flex w-full m-auto mt-10 justify-evenly items-center gap-4 z-10'>
           <div className=' w-full '>
-           <p>Indulge in luxury and comfort at Herittage, where every moment is crafted to perfection. </p>
+           <p className='lora'>Indulge in luxury and comfort at Hotel Indragarh Heritage, where every moment is crafted to perfection. </p>
           </div>
           </div>
        

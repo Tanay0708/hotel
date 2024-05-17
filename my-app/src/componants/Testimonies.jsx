@@ -11,10 +11,9 @@ const Testimonies = () => {
     <div className=" max-w-2xl lg:max-w-4xl m-auto text-center">
       <h1 className='text-3xl lg:text-6xl forum'>What our client says</h1>
       <figure className="mt-10">
-        <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-          <p>
-            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-            molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+        <blockquote className="text-center text-xl  leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+          <p className='lora'>
+            “I recently stayed at Hotel Indergarh Heritage and was blown away by the level of service and comfort. The Deluxe Room was beautifully appointed, and the staff went above and beyond to ensure I had everything I needed.  I highly recommend this hotel to anyone looking for a luxurious and memorable stay.”
           </p>
         </blockquote>
         <figcaption className="mt-10">
