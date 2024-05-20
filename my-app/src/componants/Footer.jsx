@@ -26,6 +26,7 @@ const Footer = () => {
            <li className='lora text-lg mt-2'>Home</li>
            </Link>
            <Link to={"/rooms/deluxe"}>
+          
            <li className='lora text-lg mt-2'>Deluxe</li>
            </Link>
            <Link to={"/rooms/grand-royal"}>

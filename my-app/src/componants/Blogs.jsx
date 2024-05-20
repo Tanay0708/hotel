@@ -1,5 +1,6 @@
 import React from 'react'
 import BlogsCard from './BlogsCard'
+import { Link } from 'react-router-dom'
 
 const Blogs = () => {
   return (
@@ -16,8 +17,10 @@ const Blogs = () => {
             </p>
         </div>
         <div className='flex flex-col md:flex-row lg:flex-row gap-10 mt-10'>
+            <Link to={'/blogs'}>
             <BlogsCard pic={"https://herittage.wpengine.com/wp-content/uploads/2023/06/blog-detail-2.webp"} />
-            <BlogsCard pic={"https://herittage.wpengine.com/wp-content/uploads/2023/06/blog-1-1.webp"} />
+            </Link>
+            {/* <BlogsCard pic={"https://herittage.wpengine.com/wp-content/uploads/2023/06/blog-1-1.webp"} /> */}
         </div>
    </section>
   )

@@ -9,10 +9,13 @@ import RoyalRoom from './RoyalRoom'
 import BlogPost from './BlogPost'
 import ListUser from './ListUser'
 import HeritageRoom from './HeritageRoom'
+import CreateBlog from './CreateBlog'
+import ScrollToTop from '../componants/ScrollToTop'
 
 const AllRoutes = () => {
   return (
     <div>
+      <ScrollToTop />
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/login' element={<Admin />} />
@@ -21,6 +24,7 @@ const AllRoutes = () => {
             <Route path='/rooms/grand-royal' element={<RoyalRoom />} />
             <Route path='/rooms/grand-heritage' element={<HeritageRoom />} />
             <Route path='/blogs' element={<BlogPost />} />
+            <Route path='/create-blog' element={<PrivateRoute> <CreateBlog /></PrivateRoute>} />
         </Routes>
     </div>
   )

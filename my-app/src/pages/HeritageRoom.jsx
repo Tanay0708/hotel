@@ -1,5 +1,5 @@
 import React from 'react'
-import { pic15 } from '../Images'
+import { pic13 } from '../Images'
 import Navbar from '../componants/Navbar'
 import PriceTable from '../componants/PriceTable'
 import Footer from '../componants/Footer'
@@ -14,11 +14,11 @@ const HeritageRoom = () => {
         <section className='bg-[#FFFCF2] text-[#3D3931] pb-10'>
           <Navbar/>
           <div className='w-[80%] m-auto h-96'>
-            <img src={pic15} alt="" className='w-full h-full object-contain'/>
+            <img src={pic13} alt="" className='w-full h-full object-contain'/>
           </div>
           <div className=' w-[80%] m-auto mt-5 leading-10'>
             <h1 className='text-4xl text-center'>
-              Deluxe Room ( ₹700/night )
+              Grand Heritage ( ₹2000/night )
             </h1>
             <p className='mt-5 text-lg '>
             Welcome to your home away from home at Hotel Indergarh Heritage, where luxury meets convenience. Our meticulously designed rooms offer the perfect blend of comfort and functionality, ensuring a delightful stay for every guest.

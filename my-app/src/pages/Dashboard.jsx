@@ -9,7 +9,9 @@ import moment from 'moment';
 import { hotelLogo } from '../Images'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true }
+  { name: 'Dashboard', href: '/dashboard', current: true },
+  { name: 'Blogs', href: '/create-blog', current: true }
+
 ]
 
 function classNames(...classes) {

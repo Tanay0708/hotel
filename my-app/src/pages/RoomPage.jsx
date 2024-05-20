@@ -1,5 +1,5 @@
 import React from 'react'
-import {pic6} from '../Images'
+import {pic17, pic6} from '../Images'
 import Navbar from '../componants/Navbar'
 import Footer from '../componants/Footer'
 import PriceTable from '../componants/PriceTable'
@@ -11,7 +11,7 @@ const RoomPage = () => {
     <section className='bg-[#FFFCF2] text-[#3D3931]  pb-10'>
       <Navbar />
       <div className='w-[80%] m-auto h-96'>
-        <img src={pic6} alt="" className='w-full h-full object-contain'/>
+        <img src={pic17} alt="" className='w-full h-full object-contain'/>
       </div>
       <div className=' w-[80%] m-auto mt-5 leading-10'>
         <h1 className='text-4xl text-center'>
