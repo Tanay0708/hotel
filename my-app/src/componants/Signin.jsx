@@ -2,6 +2,7 @@ import { onAuthStateChanged, signInWithEmailAndPassword,signOut } from 'firebase
 import React, { useEffect, useState } from 'react'
 import { auth } from '../config/firebase-config';
 import {useNavigate} from 'react-router-dom'
+import { hotelLogo } from '../Images';
 
 const Signin = () => {
     const [email,setEmail] = useState();
@@ -56,7 +57,7 @@ const Signin = () => {
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             className="mx-auto h-10 w-auto"
-            src="https://herittage.wpengine.com/wp-content/uploads/2023/05/logo.svg"
+            src={hotelLogo}
             alt="Your Company"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">

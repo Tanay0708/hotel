@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../componants/Navbar'
 import { collection,getDocs } from 'firebase/firestore'
 import { db } from '../config/firebase-config'
-import { pic12, pic4, pic5, pic6 } from '../Images'
+import { pic6 } from '../Images'
 import Footer from '../componants/Footer'
 
 const BlogPost = () => {
@@ -19,6 +19,7 @@ const BlogPost = () => {
         const filterdData = data.docs.map((doc) => ({...doc.data(),id:doc.id}))
         setBlogList(filterdData)
         setOne(filterdData[0].id);
+   
       }
       catch(err) {
         console.log(err)
@@ -38,9 +39,7 @@ const handleClick = (id) => {
     <section className='bg-[#FBF6E8] '>
       <Navbar />
       <div className='w-full p-2 md:p-10'>
-        <div className=' w-full md:w-[50%] h-60 md:h-96 m-auto mt-5'>
-        <img src={pic6} alt="" className='h-full w-full object-contain' />
-        </div>
+        
 
         <div >
           <h1>
@@ -48,12 +47,17 @@ const handleClick = (id) => {
             blogList.map((el) => {
               if(el.id == one) {
                 return (
+                  <>
+                  <div className=' w-full md:w-[50%] h-60 md:h-96 m-auto mt-5'>
+        <img src={el.image} alt="" className='h-full w-full object-contain' />
+        </div>
                 <div className='text-center forum text-4xl mt-10 w-[80%] m-auto'>
                   <h1>{el.headline}</h1>
                   <p className='text-2xl mt-5 md:mt-10 whitespace-pre-wrap text-left'>
                     {el.content}
                   </p>
                 </div>
+                </>
               )
               }
             })

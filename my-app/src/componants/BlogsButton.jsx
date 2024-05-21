@@ -7,9 +7,9 @@ import {
     DialogFooter,
   } from "@material-tailwind/react";
 import { addDoc, collection } from 'firebase/firestore';
-import { db } from '../config/firebase-config';
-
-
+import { db, storage } from '../config/firebase-config';
+import { getDownloadURL, ref,uploadBytes } from 'firebase/storage';
+import {v4} from 'uuid';
 
 
 
@@ -18,6 +18,8 @@ const BlogsButton = () => {
     const [open, setOpen] = useState(false);
     const [head,setHead] = useState();
     const [content,setContent] = useState();
+    const [image,setImage] = useState(null);
+    const [imgLink,setImgLink] = useState();
 
     const handleOpen = () => setOpen(!open);
 
@@ -28,8 +30,10 @@ const BlogsButton = () => {
         await addDoc(blogsCollectionRef,
           {
           headline: head,
-          content: content
+          content: content,
+          image: imgLink
         })
+       
 
         alert("Blog added")
         handleOpen();
@@ -39,6 +43,18 @@ const BlogsButton = () => {
      
         alert("Enter All Details")
       }
+    }
+
+    const imageUpload = () => {
+      if(image == null) return;
+
+      const imageRef = ref(storage,`images/${v4()}`)
+      uploadBytes(imageRef,image).then((data) => {
+        getDownloadURL(data.ref).then(val => {
+          setImgLink(val)
+        })
+        alert("Image uploded")
+      })
     }
 
     return (
@@ -60,6 +76,12 @@ const BlogsButton = () => {
           <label>Headline</label> 
           <br />
           <input type="text" placeholder='Enter your Blog headline' className='border-2 w-[100%] h-12 md:w-[80%] lg:w-[80%]' onChange={(e) => setHead(e.target.value)}/> 
+          <br />
+          <label>Image</label>
+          <br />
+          <input type="file"  className='border-2 w-[100%] h-12 md:w-[80%] lg:w-[80%] ' onChange={(e) => setImage(e.target.files[0])} />
+          <br />
+          <button onClick={imageUpload}>Upload</button>
           <br />
           <label >Content</label>
           <br />
