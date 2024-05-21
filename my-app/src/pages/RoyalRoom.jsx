@@ -14,13 +14,13 @@ const RoyalRoom = () => {
             <img src={pic16} alt="" className='w-full h-full object-contain'/>
           </div>
           <div className=' w-[80%] m-auto mt-5 leading-10'>
-            <h1 className='text-4xl text-center'>
-              Deluxe Room ( ₹1800/night )
+            <h1 className='text-4xl text-center forum'>
+              Grand Royal ( ₹1800/night )
             </h1>
-            <p className='mt-5 text-lg '>
+            <p className='mt-5 text-lg lora '>
             Welcome to your home away from home at Hotel Indergarh Heritage, where luxury meets convenience. Our meticulously designed rooms offer the perfect blend of comfort and functionality, ensuring a delightful stay for every guest.
             </p>
-            <div className='text-lg mt-10'>
+            <div className='text-lg mt-10 lora'>
             <span className='text-3xl'> Rooms Features:</span> 
               <ul className='list-disc  '>
                 <li className='mt-5'>
@@ -34,7 +34,7 @@ const RoyalRoom = () => {
                 </li>
               </ul>
             </div>
-            <div className='text-lg mt-10'>
+            <div className='text-lg mt-10 lora'>
             <span className='text-3xl'> Check-In & Check-Out:</span> 
               <ul className='list-disc  '>
                 <li className='mt-5'>
@@ -46,13 +46,13 @@ const RoyalRoom = () => {
                 
               </ul>
             </div>
-            <div className='text-lg mt-10'>
+            <div className='text-lg mt-10 lora'>
             <span className='text-3xl'>Unwind and Recharge:</span> 
               <p className='mt-5'>
               After a day of sightseeing or business meetings, return to your room and unwind in comfort. Catch up on your favorite shows, stay connected with loved ones, or simply relax in the soothing ambiance of your private retreat.
               </p>
             </div>
-            <div className='text-lg mt-10'>
+            <div className='text-lg mt-10 lora'>
             <span className='text-3xl'>Book Your Stay:</span> 
               <p className='mt-5'>
               Experience the epitome of luxury and convenience at Hotel Indergarh Heritage. Book your stay with us today and immerse yourself in a world of unparalleled comfort and hospitality. We eagerly await the opportunity to exceed your expectations and create lasting memories during your visit.

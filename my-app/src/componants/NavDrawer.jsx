@@ -64,6 +64,11 @@ const NavDrawer = () => {
             Grand Heritage
           </Typography>
           </Link>
+          <Link to={'/blogs'}>
+          <Typography color="gray" className="mb-8 pr-4 font-normal">
+            Blogs
+          </Typography>
+          </Link>
          
         </Drawer>
       </React.Fragment>

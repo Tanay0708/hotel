@@ -26,6 +26,9 @@ const Navbar = () => {
            <Link to={'/rooms/grand-heritage'}>
            <li className='text-lg'>Grand Heritage</li>
            </Link>
+           <Link to={'/blogs'}>
+           <li className='text-lg'>Blogs</li>
+           </Link>
         </ul>
         </div>
             <div className='lg:hidden block z-100'>

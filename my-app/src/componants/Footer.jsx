@@ -35,6 +35,9 @@ const Footer = () => {
            <Link to={"/rooms/grand-heritage"}>
            <li className='lora text-lg mt-2'>Grand Heritage</li>
            </Link>
+           <Link to={"/blogs"}>
+           <li className='lora text-lg mt-2'>Blogs</li>
+           </Link>
                 </ul>
             </div>
            <div >

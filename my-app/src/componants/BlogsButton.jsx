@@ -6,15 +6,40 @@ import {
     DialogBody,
     DialogFooter,
   } from "@material-tailwind/react";
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from '../config/firebase-config';
+
+
 
 
 
 const BlogsButton = () => {
   
     const [open, setOpen] = useState(false);
-  
+    const [head,setHead] = useState();
+    const [content,setContent] = useState();
 
     const handleOpen = () => setOpen(!open);
+
+    const blogsCollectionRef = collection(db,"blogs")
+    
+    const handleSubmit = async () => {
+      try {
+        await addDoc(blogsCollectionRef,
+          {
+          headline: head,
+          content: content
+        })
+
+        alert("Blog added")
+        handleOpen();
+        window.location.reload()
+      }
+      catch(err) {
+     
+        alert("Enter All Details")
+      }
+    }
 
     return (
     <>
@@ -34,14 +59,11 @@ const BlogsButton = () => {
           
           <label>Headline</label> 
           <br />
-          <input type="text" placeholder='Enter your Blog headline' className='border-2 w-[100%] h-12 md:w-[80%] lg:w-[80%]'/> 
-          <br />
-          <label >Image</label><br />
-          <input type="file" className='border-2 w-[100%] h-12 md:w-[80%] lg:w-[80%]' />
+          <input type="text" placeholder='Enter your Blog headline' className='border-2 w-[100%] h-12 md:w-[80%] lg:w-[80%]' onChange={(e) => setHead(e.target.value)}/> 
           <br />
           <label >Content</label>
           <br />
-          <textarea className='border-2 w-full md:w-[80%]' rows="10"></textarea>
+          <textarea className='border-2 w-full md:w-[80%]' rows="10" onChange={(e) => setContent(e.target.value)}></textarea>
           
         </DialogBody>
         <DialogFooter>
@@ -53,7 +75,7 @@ const BlogsButton = () => {
           >
             <span>Cancel</span>
           </Button>
-          <Button variant="gradient"  className='bg-[#9B804E]' >
+          <Button variant="gradient"  className='bg-[#9B804E]' onClick={handleSubmit} >
             <span>Confirm</span>
           </Button>
         </DialogFooter>
