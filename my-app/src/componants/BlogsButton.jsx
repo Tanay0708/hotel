@@ -46,7 +46,7 @@ const BlogsButton = () => {
     }
 
     const imageUpload = () => {
-      if(image == null) return;
+      if(image == null) return alert("Select Image File");
 
       const imageRef = ref(storage,`images/${v4()}`)
       uploadBytes(imageRef,image).then((data) => {
@@ -81,7 +81,7 @@ const BlogsButton = () => {
           <br />
           <input type="file"  className='border-2 w-[100%] h-12 md:w-[80%] lg:w-[80%] ' onChange={(e) => setImage(e.target.files[0])} />
           <br />
-          <button onClick={imageUpload}>Upload</button>
+          <button onClick={imageUpload} className='w-32 md:w-52 mt-2 bg-[#9B804E] text-white'>Upload Image</button>
           <br />
           <label >Content</label>
           <br />
