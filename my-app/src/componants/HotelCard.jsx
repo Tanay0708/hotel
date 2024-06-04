@@ -12,7 +12,7 @@ const HotelCard = ({pic,name,price}) => {
         
         <img src={pic} className='w-full h-full  -z-10 group-hover:scale-125 transition delay-300 ease-in-out object-cover'  alt="" />
         </div>
-        <div className=' w-full sm:hidden h-16 absolute bottom-16 hidden group-hover:flex gap-5 p-2 items-center bg-black bg-opacity-15  '>
+        <div className=' w-full h-16 absolute bottom-16 hidden group-hover:flex gap-5 p-2 items-center  bg-black bg-opacity-15  '>
         <i className="fi fi-tr-air-conditioner text-white  text-3xl"></i>
         <i className="fi fi-tr-bath text-white  text-3xl"></i>
         {/* <i className="fi fi-rr-screen text-white  text-3xl"></i> */}

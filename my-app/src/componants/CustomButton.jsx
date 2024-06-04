@@ -60,9 +60,10 @@ const CustomButton = () => {
           mount: { scale: 1, y: 0 },
           unmount: { scale: 0.9, y: -100 },
         }}
+        className='bg-[#FEFBF1]'
       >
         <DialogHeader></DialogHeader>
-        <DialogBody className='text-left md:text-center  text-black  w-[80%] m-auto lora '>
+        <DialogBody className='text-left md:text-center  text-black   w-[80%] m-auto lora '>
             <label  >Name</label><br />
           <input type="text" required className='border-2 w-[100%] h-12 md:w-[80%] lg:w-[80%]' placeholder='Enter your Name' onChange={(e) => setName(e.target.value)} /><br />
           <label  >Check-in</label><br />

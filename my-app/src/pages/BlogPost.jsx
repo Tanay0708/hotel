@@ -4,6 +4,8 @@ import { collection,getDocs } from 'firebase/firestore'
 import { db } from '../config/firebase-config'
 import { pic6 } from '../Images'
 import Footer from '../componants/Footer'
+import BlogsCard from '../componants/BlogsCard'
+import MoreCard from '../componants/MoreCard'
 
 const BlogPost = () => {
 
@@ -65,16 +67,23 @@ const handleClick = (id) => {
           </h1>
         </div>
 
-        <div className='flex flex-col w-[50%] m-auto mt-10 '>
+        <div className='flex flex-col  w-[80%] md:w-[50%] m-auto mt-10 '>
         <h1 className='forum text-2xl text-center'>More Blogs</h1>
+        <div className='w-full h-52 text-center '>
          {
           blogList.map((el) => {
             if(el.id != one){
-              return <button className='border border-[#9B804E] mt-2 lora' onClick={()=>handleClick(el.id)}>{el.headline}</button>
+              // return <button className='border border-[#9B804E] mt-2 lora' onClick={()=>handleClick(el.id)}>{el.headline}</button>
+              return (
+                <div >
+                  <MoreCard pic={el.image} head={el.headline} onClick={()=>handleClick(el.id)} />
+                </div>
+              )
             }
             
           })
          }
+         </div>
         </div>
      
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Map = () => {
   return (
-    <section className='w-full bg-[#FBF9EF] pt-10 pb-10'>
+    <section className='w-full bg-[#FBF6E8] pt-10 pb-10'>
     <div className='w-[80%] m-auto  '>
         <div>
             <h1 className='text-4xl forum text-center'>LOCATION</h1>

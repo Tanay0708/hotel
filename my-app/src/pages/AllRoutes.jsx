@@ -11,6 +11,7 @@ import ListUser from './ListUser'
 import HeritageRoom from './HeritageRoom'
 import CreateBlog from './CreateBlog'
 import ScrollToTop from '../componants/ScrollToTop'
+import Gallery from '../componants/Gallery'
 
 const AllRoutes = () => {
   return (
@@ -25,6 +26,7 @@ const AllRoutes = () => {
             <Route path='/rooms/grand-heritage' element={<HeritageRoom />} />
             <Route path='/blogs' element={<BlogPost />} />
             <Route path='/create-blog' element={<PrivateRoute> <CreateBlog /></PrivateRoute>} />
+            <Route path='/gallery' element={<Gallery />} />
         </Routes>
     </div>
   )

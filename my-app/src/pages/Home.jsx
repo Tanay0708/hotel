@@ -9,6 +9,7 @@ import Blogs from '../componants/Blogs'
 import Footer from '../componants/Footer'
 import PriceTable from '../componants/PriceTable';
 import Map from '../componants/Map';
+import HomeGallery from '../componants/HomeGallery';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
     <Hotels />
     <PriceTable />
     <Amenities />
+    <HomeGallery />
     <Testimonies />
     <Blogs />
     <Map />
