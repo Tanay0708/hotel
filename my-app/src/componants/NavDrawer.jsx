@@ -69,6 +69,12 @@ const NavDrawer = () => {
             Blogs
           </Typography>
           </Link>
+          <a href="tel:+916260512625">
+          <Typography color="gray" className="mb-8 pr-4 font-normal" >
+            Phone No. :- +91 7581000017
+          </Typography>
+          </a>
+         
          
         </Drawer>
       </React.Fragment>

@@ -5,6 +5,7 @@ import NavDrawer from './NavDrawer';
 import CustomButton from './CustomButton';
 import {Link} from 'react-router-dom'
 import { hotelLogo } from '../Images';
+import { Button } from '@material-tailwind/react';
 
 const Navbar = () => {
   return (
@@ -31,12 +32,25 @@ const Navbar = () => {
            </Link>
         </ul>
         </div>
-            <div className='lg:hidden block z-100'>
+        <div>
+        
+        </div>
+            <div className='lg:hidden flex items-center gap-2 z-100' >
+           <a href="tel:+916260512625">
+            <Button  className='bg-[#9B804E] w-full h-full'>
+        Call us
+      </Button>
+      </a>
                 <NavDrawer/>
             </div>
-            <div className='w-36 hidden md:hidden lg:block'>
+            <div className='w-72 hidden md:hidden lg:flex gap-2  items-center'>
            <CustomButton />
+           <span className='forum'>OR</span>
+           <Button  className='bg-[#9B804E] w-full h-full'>
+        7581000017
+      </Button>
             </div>
+            
     </div>
   )
 }

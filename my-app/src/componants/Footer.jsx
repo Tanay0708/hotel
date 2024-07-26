@@ -50,7 +50,7 @@ const Footer = () => {
         <div className='w-[80%] h-1 bg-[#9B804E] mt-10 m-auto'>
 
         </div>
-        <h1 className='lora text-center text-lg mt-5  text-[#b5b5b5]'>Hotel Indragarh Heritage</h1>
+        <h1 className='lora text-center text-lg mt-5  text-[#b5b5b5]'>Hotel Indergarh Heritage</h1>
    </section>
   )
 }
