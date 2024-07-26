@@ -46,9 +46,12 @@ const Navbar = () => {
             <div className='w-72 hidden md:hidden lg:flex gap-2  items-center'>
            <CustomButton />
            <span className='forum'>OR</span>
+           
            <Button  className='bg-[#9B804E] w-full h-full'>
-        7581000017
+            <a href="#footer">Call</a>
+        
       </Button>
+     
             </div>
             
     </div>

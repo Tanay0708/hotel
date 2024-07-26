@@ -1,4 +1,4 @@
-import { Carousel } from '@material-tailwind/react'
+import { Button, Carousel } from '@material-tailwind/react'
 import React from 'react'
 
 const Testimonies = () => {
@@ -25,8 +25,13 @@ const Testimonies = () => {
           <div className="mt-4 flex items-center justify-center space-x-3 text-base">
             <div className="font-semibold text-gray-900">A.P</div>
            
-          
+            
           </div>
+          <a href="https://www.google.com/travel/search?q=hotel%20indergarh%20heritage%20indore%20reviews&g2lb=4814050%2C4874190%2C4893075%2C4965990%2C4969803%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72481459%2C72485658%2C72486593%2C72494250%2C72499705%2C72513513%2C72536387%2C72549171%2C72569093%2C72570850%2C72602734%2C72616120%2C72619927%2C72620306%2C72620962%2C72634630%2C72648289%2C72649493%2C72653660%2C72658035%2C72661848%2C72662543%2C72663440%2C72671093%2C72679703&hl=en-IN&gl=in&cs=1&ssta=1&qs=CAEyFENnc0k4TVBabXFqMG40U1VBUkFCOAJCCQnwYVaDon8IlEIJCfBhVoOifwiU&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwiQ6vKX_sSHAxUAAAAAHQAAAAAQCw&ts=CAESCAoCCAMKAggDGkcKKRInMiUweDM5NjJlMzAwMWU0ZjE4NTc6MHg5NDA4N2ZhMjgzNTY2MWYwEhoSFAoHCOgPEAcYHBIHCOgPEAcYHRgBMgIQAA%3D%3D" target='_blank'>
+           <Button  className='bg-[#9B804E] w-[25%] h-full'>
+        Reviews
+      </Button>
+      </a> 
         </figcaption>
       </figure>
     </div>
