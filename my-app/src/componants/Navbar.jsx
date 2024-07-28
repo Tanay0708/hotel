@@ -36,7 +36,7 @@ const Navbar = () => {
         
         </div>
             <div className='lg:hidden flex items-center gap-2 z-100' >
-           <a href="tel:+916260512625">
+           <a href="tel:+917581000017">
             <Button  className='bg-[#9B804E] w-full h-full'>
         Call us
       </Button>
